@@ -58,21 +58,21 @@ export default function Signup() {
 
                     <div className='mt-3'>                    
                         <p className='mb-1'>Name:</p>
-                        <input type="text" placeholder="Enter Your Name" className="outline-none border rounded py-1 px-2 w-full "
+                        <input type="text" placeholder="Enter Your Name" className=" focus:border-b-2  outline-none rounded py-1 px-2 w-full "
                         {...register("name", { required: true })} />
                         {errors.name && <span className='text-red-500 text-sm'>This field is required</span>}
                     </div>
 
                     <div className='mt-5'>
                         <p className='mb-1'>Email:</p>
-                        <input type="text" placeholder="Enter Your Email" className="outline-none border rounded py-1 px-2 w-full "
+                        <input type="text" placeholder="Enter Your Email" className="focus:border-b-2 outline-none border rounded py-1 px-2 w-full "
                         {...register("email", { required: true })} />
                         {errors.email && <span className='text-red-500 text-sm'>This field is required</span>}
                     </div>
 
                     <div className='mt-5'>
                         <p className='mb-1'>Password:</p>
-                        <input type="password" placeholder="Enter Your Password" className="outline-none border rounded py-1 px-2 w-full "
+                        <input type="password" placeholder="Enter Your Password" className="focus:border-b-2 outline-none border rounded py-1 px-2 w-full "
                         {...register("password", { required: true })} />
                         {errors.password && <span className='text-red-500 text-sm'>This field is required</span>}
                     </div>

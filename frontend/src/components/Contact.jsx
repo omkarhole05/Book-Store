@@ -47,27 +47,27 @@ export default function Contact() {
 
               <div className='mt-3'>
                 <p className='mb-1'>Name:</p>
-                <input type="text" placeholder="Enter Your Name" className="outline-none border rounded py-1 px-2 w-full "
+                <input type="text" placeholder="Enter Your Name" className="focus:border-b-2 outline-none border rounded py-1 px-2 w-full "
                   {...register("name", { required: true })} />
                 {errors.name && <span className='text-red-500 text-sm'>This field is required</span>}
               </div>
               
               <div className='mt-5'>
                 <p className='mb-1'>Email:</p>
-                <input type="text" placeholder="Enter your Email" className="outline-none border rounded py-1 px-2 w-full "
+                <input type="text" placeholder="Enter your Email" className="focus:border-b-2 outline-none border rounded py-1 px-2 w-full "
                 {...register("email", { required: true })}/>
                 {errors.email && <span className='text-red-500 text-sm'>This field is required</span>}
               </div>
 
               <div className='mt-5'>
                 <p className='mb-1'>Message:</p>
-                <input type="type" placeholder="Leave your msg here..." className="outline-none border rounded py-1 px-2 w-full pb-13"
+                <input type="type" placeholder="Leave your msg here..." className="focus:border-b-2 outline-none border rounded py-1 px-2 w-full pb-13"
                   {...register("message", { required: true })} />
                 {errors.message && <span className='text-red-500 text-sm'>This field is required</span>}
               </div>
 
               <div className="mt-7 flex justify-between ">
-                <button className="btn bg-blue-600 text-white hover:bg-blue-700 text-white transition duration-300">
+                <button className="btn bg-blue-600 text-white active:bg-black hover:bg-blue-700 text-white transition duration-300">
                   Submit
                 </button>
 

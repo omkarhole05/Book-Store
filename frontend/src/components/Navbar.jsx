@@ -5,6 +5,7 @@ import Login from "./Login";
 import Contact from "./Contact";
 import { useAuth } from "../../context/AuthProvider";
 import  Logout  from "./Logout";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [authUser, setAuthUser] = useAuth();
@@ -103,7 +104,7 @@ export default function Navbar() {
                   <Link>About</Link>
                 </li>
                 <li>
-                  <Link to="/Contact">Contact</Link>
+                  <Link className="" to="/Contact">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -119,7 +120,7 @@ export default function Navbar() {
             {
               authUser ? <Logout /> :
               <div>
-              <Link className="btn bg-blue-600 rounded-md hover:bg-blue-700 text-white transition duration-300"
+              <Link className="btn bg-blue-600 rounded-md hover:bg-blue-700 active:bg-black text-white transition duration-300"
                 onClick={() => document.getElementById('my_modal_3').showModal()}>
                 Login
               </Link>

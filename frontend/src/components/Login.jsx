@@ -68,7 +68,7 @@ export default function Login() {
                         </div>
 
                         <div className='mt-7 flex justify-between'>
-                            <button className="btn bg-blue-600 text-white hover:bg-blue-700 transition duration-300">
+                            <button className="btn bg-blue-600 text-white hover:bg-blue-700 active:bg-black transition duration-300">
                                 Login
                             </button>
 
