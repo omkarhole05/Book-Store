@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import bookRoute from './route/book.route.js';
 import cors from 'cors';    
 import userRoute from './route/user.route.js';
-import contactRoute from './route/contact.route.js'
+import contactRoute from './route/contact.route.js';
 
 const app = express()
 app.use(cors()); // used for pass data from backend to frontend
@@ -17,17 +17,10 @@ const URL=process.env.mongoDBURL;
 
 //connection MONGODB
 try {
-    mongoose.connect(URL,
-        {
-            useNewUrlParser: true, 
-            useUnifiedTopology: true 
-        })
+    mongoose.connect(URL)
         console.log("succesfully connected mongoose");
-        
-    
 } catch (error) {
-    console.log("Error: ", error);
-    
+    console.log("Error: ");
 }
 
 //defining routes 

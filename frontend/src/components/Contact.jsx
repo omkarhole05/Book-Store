@@ -61,7 +61,7 @@ export default function Contact() {
 
               <div className='mt-5'>
                 <p className='mb-1'>Message:</p>
-                <input type="type" placeholder="Leave your msg here..." className="focus:border-b-2 outline-none border rounded py-1 px-2 w-full pb-13"
+                <textarea type="message" row="4" col="30" placeholder="Leave your msg here..." className="focus:border-b-2 outline-none border rounded py-1 px-2 w-full pb-13"
                   {...register("message", { required: true })} />
                 {errors.message && <span className='text-red-500 text-sm'>This field is required</span>}
               </div>

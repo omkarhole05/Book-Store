@@ -5,8 +5,8 @@ export default function
     () {
     return (
         <div>
-            <hr />
-            <footer className="footer footer-horizontal footer-center bg-white text-base-content rounded p-10">
+            {/* <hr /> */}
+            <footer className="footer footer-horizontal footer-center border-t-2 border-gray-200  bg-white  text-base-content rounded p-10">
                 <nav className="grid grid-flow-col gap-4">
                     <a className="link link-hover">About us</a>
                     <a className="link link-hover">Contact</a>

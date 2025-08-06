@@ -19,12 +19,10 @@ export default function Signup() {
             try {
                 const res = await axios.post("http://localhost:3000/user/signup", userInfo);
                 console.log(res.data);
-                
-                // toast.success('Signup successful');
             
                 setTimeout(() => {
-                    window.location.reload();   
-                    window.location.href = "/"; 
+                    window.location.reload();
+                    window.location.href = "/";
                 }, 1000);
                 
                 toast.success('Signup successful');
@@ -51,7 +49,7 @@ export default function Signup() {
             <div id="my_modal_3" className="  rounded-lg  p-7 w-130">
 
             <form onSubmit={handleSubmit(onSubmit)} method="dialog">
-                <div className="flex justify-between">    
+                <div className="flex justify-between">   
                     <h3 className="font-bold text-xl">SignUp Here</h3>
                     <Link to="/" className="btn btn-md mt-0 btn-circle btn-ghost">✕</Link>
                 </div>

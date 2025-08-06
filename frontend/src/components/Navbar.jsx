@@ -25,11 +25,8 @@ export default function Navbar() {
     };
   }, []);
 
-  const handleclick=()=>{
-    <style>
-      color:red;
-    </style>
-  }
+  const [activeSection, setActiveSection] = useState("home");
+
 
   return (
     <>
@@ -94,18 +91,24 @@ export default function Navbar() {
             </div>
             <div className="navbar-center hidden lg:flex mx-2">
               <ul className="menu menu-horizontal px-1">
-                <li>
-                  <Link  to="/" >Home</Link>
+                <li >
+
+                  <Link to="/">Home</Link>
+
                 </li>
-                <li>
-                  <Link to="/Courses">Courses</Link>
+
+                <li >
+                <Link to="/Courses">Courses</Link>
                 </li>
+
                 <li>
                   <Link>About</Link>
                 </li>
-                <li>
-                  <Link className="" to="/Contact">Contact</Link>
+
+                <li >
+                  <Link to="/Contact">Contact</Link>
                 </li>
+                
               </ul>
             </div>
           </div>
